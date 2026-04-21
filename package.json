@@ -2,11 +2,8 @@
   "name": "my-dashboard",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "start": "npm run build && npm run start --prefix backend",
-    "dev": "concurrently -n api,web -c cyan,magenta \"npm run start --prefix backend\" \"wait-on tcp:127.0.0.1:5000 && vite\"",
-    "dev:web": "vite",
+    "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -16,8 +13,6 @@
     "react-dom": "^19.2.4"
   },
   "devDependencies": {
-    "concurrently": "^9.1.2",
-    "wait-on": "^8.0.1",
     "@eslint/js": "^9.39.4",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
